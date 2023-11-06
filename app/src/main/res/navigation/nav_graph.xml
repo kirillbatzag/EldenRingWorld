@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.eldenringworld.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.eldenringworld.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/detailBossFragment"
+        android:name="com.example.eldenringworld.DetailBossFragment"
+        android:label="fragment_detail_boss"
+        tools:layout="@layout/fragment_detail_boss" />
+    <fragment
+        android:id="@+id/detailLocationFragment"
+        android:name="com.example.eldenringworld.detailLocationFragment"
+        android:label="fragment_detail_location"
+        tools:layout="@layout/fragment_detail_location" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.eldenringworld.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+</navigation>
