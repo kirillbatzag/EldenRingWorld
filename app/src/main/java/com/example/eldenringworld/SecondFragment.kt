@@ -63,7 +63,7 @@ class SecondFragment : Fragment() {
     }
 
     fun onLocalItemClick(localData: locationData){
-        val detailLocationFragment = detailLocationFragment()
+        val detailLocationFragment = DetailLocationFragment()
         detailLocationFragment.setLocalData(localData)
         val locaName = view?.findViewById<TextView>(R.id.loca_name)
         locaName?.text = localData.name

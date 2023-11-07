@@ -9,7 +9,7 @@ import com.example.eldenringworld.model.bossData
 import com.squareup.picasso.Picasso
 
 
-class bossAdapter(private val listener: FirstFragment) : RecyclerView.Adapter<bossAdapter.BossViewHolder>(){
+class BossAdapter(private val listener: FirstFragment) : RecyclerView.Adapter<BossAdapter.BossViewHolder>(){
 
     private var bosses: List<bossData> = listOf()
     private var filterBoses: List<bossData> = emptyList()
@@ -41,13 +41,13 @@ class bossAdapter(private val listener: FirstFragment) : RecyclerView.Adapter<bo
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): bossAdapter.BossViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BossAdapter.BossViewHolder {
         val binding =
             ItemBossBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return BossViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: bossAdapter.BossViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BossAdapter.BossViewHolder, position: Int) {
         if (position < filterBoses.size) {
             val boss = filterBoses[position]
             holder.bind(boss)

@@ -5,17 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.eldenringworld.adapter.FavoriteBossAdapter
+import com.example.eldenringworld.databinding.FragmentFavoriteBinding
+import com.example.eldenringworld.model.FavoriteBossModel
 
 class FavoriteFragment : Fragment() {
 
+    private lateinit var favoriteAdapter: FavoriteBossAdapter
+    private lateinit var favoriteBossDao: FavoriteBossModel
+    private lateinit var binding: FragmentFavoriteBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favorite, container, false)
+        binding = FragmentFavoriteBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 
     //Сделать и настроить фрагмент для FavoriteBoss
 

@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_detail_boss" />
     <fragment
         android:id="@+id/detailLocationFragment"
-        android:name="com.example.eldenringworld.detailLocationFragment"
+        android:name="com.example.eldenringworld.DetailLocationFragment"
         android:label="fragment_detail_location"
         tools:layout="@layout/fragment_detail_location" />
     <fragment

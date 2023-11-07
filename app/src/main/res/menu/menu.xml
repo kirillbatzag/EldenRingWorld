@@ -12,4 +12,9 @@
         android:id="@+id/loca"
         android:icon="@drawable/world"
         android:orderInCategory="2"/>
+    <item
+        android:title="Favorite"
+        android:id="@+id/favorite"
+        android:icon="@drawable/baseline_favorite_24"
+        android:orderInCategory="3"/>
 </menu>

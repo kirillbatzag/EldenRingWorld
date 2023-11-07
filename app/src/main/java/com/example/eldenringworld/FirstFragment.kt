@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.eldenringworld.adapter.bossAdapter
+import com.example.eldenringworld.adapter.BossAdapter
 import com.example.eldenringworld.api.RetrofitHelper
 import com.example.eldenringworld.api.apiBoss
 import com.example.eldenringworld.databinding.FragmentFirstBinding
@@ -25,7 +25,7 @@ class FirstFragment : Fragment() {
 
 
     private lateinit var binding: FragmentFirstBinding
-    private lateinit var bossAdapter: bossAdapter
+    private lateinit var bossAdapter: BossAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,7 +38,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        bossAdapter = bossAdapter(this)
+        bossAdapter = BossAdapter(this)
         binding.RvBoss.layoutManager = LinearLayoutManager(requireContext())
         binding.RvBoss.adapter = bossAdapter
 

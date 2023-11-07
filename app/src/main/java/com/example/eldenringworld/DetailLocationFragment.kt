@@ -9,7 +9,7 @@ import com.example.eldenringworld.databinding.FragmentDetailLocationBinding
 import com.example.eldenringworld.model.locationData
 import com.squareup.picasso.Picasso
 
-class detailLocationFragment : Fragment() {
+class DetailLocationFragment : Fragment() {
 
     private var binding: FragmentDetailLocationBinding? = null
     private lateinit var localData: locationData
