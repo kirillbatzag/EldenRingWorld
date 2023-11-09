@@ -11,8 +11,6 @@ import com.example.eldenringworld.model.FavoriteBossModel
 
 class FavoriteFragment : Fragment() {
 
-    private lateinit var favoriteAdapter: FavoriteBossAdapter
-    private lateinit var favoriteBossDao: FavoriteBossModel
     private lateinit var binding: FragmentFavoriteBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

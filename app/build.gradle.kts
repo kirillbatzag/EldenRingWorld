@@ -57,6 +57,11 @@ dependencies {
     //Picasso
     implementation ("com.squareup.picasso:picasso:2.8")
 
+    //MVVM and LIVE DATA
+    val lifecycle_version = "2.6.2"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    implementation ("androidx.navigation:navigation-ui-ktx:$lifecycle_version")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
