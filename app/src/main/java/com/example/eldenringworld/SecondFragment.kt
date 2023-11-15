@@ -48,17 +48,16 @@ class SecondFragment : Fragment() {
         val searchView = binding.SearchViewL
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
             androidx.appcompat.widget.SearchView.OnQueryTextListener{
-
             override fun onQueryTextChange(query: String?): Boolean {
                 locationAdapter.filterData(query.orEmpty())
                 return false
             }
-
             override fun onQueryTextSubmit(newText: String?): Boolean {
                 locationAdapter.filterData(newText.orEmpty())
                 return true
             }
             })
+
         loadData()
     }
 

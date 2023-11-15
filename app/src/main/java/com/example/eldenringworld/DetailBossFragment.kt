@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.example.eldenringworld.databinding.FragmentDetailBossBinding
 import com.example.eldenringworld.model.bossData
 import com.squareup.picasso.Picasso
@@ -36,6 +35,7 @@ class DetailBossFragment : Fragment() {
     ): View? {
         binding = FragmentDetailBossBinding.inflate(inflater, container, false)
         return binding?.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

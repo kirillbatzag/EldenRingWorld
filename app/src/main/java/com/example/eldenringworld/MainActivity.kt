@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.boss -> replaceFragment(FirstFragment())
                 R.id.loca -> replaceFragment(SecondFragment())
-                R.id.favorite -> replaceFragment(FavoriteFragment())
                 else ->{
                 }
             }

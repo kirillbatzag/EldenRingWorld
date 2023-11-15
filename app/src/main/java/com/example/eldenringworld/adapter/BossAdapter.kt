@@ -14,6 +14,7 @@ class BossAdapter(private val listener: FirstFragment) : RecyclerView.Adapter<Bo
     private var bosses: List<bossData> = listOf()
     private var filterBoses: List<bossData> = emptyList()
 
+    //filter fun
     fun filterData(query: String) {
         filterBoses = if (query.isEmpty()) {
             bosses

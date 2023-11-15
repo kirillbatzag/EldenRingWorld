@@ -51,7 +51,6 @@ class FirstFragment : Fragment() {
                 bossAdapter.filterData(query.orEmpty())
                 return false
             }
-
             override fun onQueryTextChange(newText: String?): Boolean {
                 bossAdapter.filterData(newText.orEmpty())
                 return true
@@ -59,7 +58,6 @@ class FirstFragment : Fragment() {
         })
 
         loadData()
-
     }
 
     fun onBossItemClick(bossData: bossData) {

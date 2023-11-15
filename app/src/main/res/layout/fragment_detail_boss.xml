@@ -79,22 +79,6 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="70dp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/baseline_favorite_24"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/bt_fav"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
         </LinearLayout>
     </ScrollView>
 
